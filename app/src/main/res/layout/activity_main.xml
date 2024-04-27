@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editNilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Masukkan nilai"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/editNilai2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Masukkan Nilai"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNilai" />
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Hasil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNilai2" />
+
+    <EditText
+        android:id="@+id/txthasilPerhitungan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Hasil Perhitungan"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHasil" />
+
+    <RadioGroup
+        android:id="@+id/rgOperasi"
+        android:layout_width="102dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/editNilai"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.033">
+
+        <RadioButton
+            android:id="@+id/rbTambah"
+            android:layout_width="95dp"
+            android:layout_height="29dp"
+            android:text="Tambah"
+            tools:layout_editor_absoluteX="295dp"
+            tools:layout_editor_absoluteY="73dp" />
+
+        <RadioButton
+            android:id="@+id/rbKurang"
+            android:layout_width="95dp"
+            android:layout_height="29dp"
+            android:text="Kurang"
+            tools:layout_editor_absoluteX="295dp"
+            tools:layout_editor_absoluteY="102dp" />
+
+        <RadioButton
+            android:id="@+id/rbKali"
+            android:layout_width="95dp"
+            android:layout_height="29dp"
+            android:text="Kali"
+            tools:layout_editor_absoluteX="295dp"
+            tools:layout_editor_absoluteY="131dp" />
+
+        <RadioButton
+            android:id="@+id/rbBagi"
+            android:layout_width="95dp"
+            android:layout_height="29dp"
+            android:text="Bagi"
+            tools:layout_editor_absoluteX="295dp"
+            tools:layout_editor_absoluteY="160dp" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="408dp"
+        android:layout_height="51dp"
+        android:background="#673AB7"
+        android:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="149dp"
+        android:layout_height="20dp"
+        android:text="PRAKTIKUM-UTS"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:text="CLEAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthasilPerhitungan"
+        app:layout_constraintVertical_bias="0.48" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
